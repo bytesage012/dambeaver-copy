@@ -1,0 +1,174 @@
+:root {
+  --theme-bg: #EAF4FF;
+  --theme-transparent: transparent;
+  --theme-panel: #D2E8FF;
+  --theme-panel-2: #B8DBFF;
+  --theme-panel-3: #9CC5FF;
+  --theme-white: #FFFFFF;
+  --theme-text: #0F2A4E;
+  --theme-text-light: #1A3A5C;
+  --theme-primary: #1D8BFF;
+  --theme-gradient-end: #0F75E0;
+  --theme-accent-1: #74B9FF;
+  --theme-accent-2: #BCE2FF;
+  --theme-accent-3: #3F93FF;
+  --theme-muted-accent: #82B8FF;
+  --theme-blue: #3B82F6;
+}
+
+body {
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+}
+
+p, h1, h2, h3, h4, h5, h6, li, span, a:not(.bg-linear-bg) {
+  color: var(--theme-text);
+}
+
+.bg-black {
+  background-color: var(--theme-bg) !important;
+}
+
+.bg-\[\#040303\] {
+  background-color: var(--theme-panel) !important;
+}
+
+.bg-\[\#0F0F0F\] {
+  background-color: var(--theme-panel-2) !important;
+}
+
+.bg-\[\#1F1F1D\] {
+  background-color: var(--theme-panel-3) !important;
+}
+
+.bg-white {
+  background-color: var(--theme-white) !important;
+}
+
+.text-white {
+  color: var(--theme-text) !important;
+}
+
+.text-\[\#FF7A00\],
+.text-primary {
+  color: var(--theme-primary) !important;
+}
+
+.border-\[\#FF7A00\],
+.border-primary {
+  border-color: var(--theme-primary) !important;
+}
+
+.border-blue-500 {
+  border-color: var(--theme-blue) !important;
+}
+
+/* Button text on gradient backgrounds stays white for readability */
+.bg-linear-bg {
+  background-image: linear-gradient(to bottom, var(--theme-primary) 0%, var(--theme-gradient-end) 100%) !important;
+}
+
+.bg-linear-bg {
+  color: var(--theme-white) !important;
+}
+
+.bg-linear-bg * {
+  color: var(--theme-white) !important;
+}
+
+/* High contrast text overrides */
+.text-white\/80 {
+  color: rgba(15, 42, 78, 0.8) !important;
+}
+
+.group-hover\:text-primary:hover {
+  color: var(--theme-primary) !important;
+}
+
+.group-\[\&\.active\]\:text-primary.active {
+  color: var(--theme-primary) !important;
+}
+
+/* Header styling for light theme */
+body.bg-black {
+  background-color: var(--theme-bg) !important;
+}
+
+header.fixed {
+  background-color: var(--theme-bg) !important;
+  box-shadow: 0 0 8px rgba(15, 42, 78, 0.08) !important;
+}
+
+header #navbar-right {
+  background-color: var(--theme-transparent) !important;
+}
+header #navbar-right.open,
+header #navbar-right.bg-black {
+  background-color: var(--theme-bg) !important;
+}
+
+header #navbar-right.bg-transparent {
+  background-color: transparent !important;
+}
+
+#navbar-right.open {
+  background-color: var(--theme-bg) !important;
+}
+
+img[src*="devider.png"] {
+  filter: invert(100%) sepia(100%) hue-rotate(185deg) saturate(300%) brightness(110%);
+}
+
+.bg-hero {
+  background-color: var(--theme-bg);
+  background-image: radial-gradient(circle at top center, rgba(29, 139, 255, 0.18), transparent 32%), linear-gradient(180deg, rgba(255,255,255,0.18), transparent 65%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-about {
+  background-color: var(--theme-panel-2);
+  background-image: radial-gradient(circle at top right, rgba(29, 139, 255, 0.16), transparent 30%), linear-gradient(180deg, rgba(255,255,255,0.14), transparent 72%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+
+.bg-features {
+  background-color: var(--theme-panel);
+  background-image: radial-gradient(circle at top left, rgba(29, 139, 255, 0.14), transparent 34%), radial-gradient(circle at bottom right, rgba(29, 139, 255, 0.10), transparent 26%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+.bg-roadmap {
+  background-color: var(--theme-panel-3);
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.15), transparent 35%), radial-gradient(circle at top, rgba(29, 139, 255, 0.12), transparent 28%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.bg-buy {
+  background-color: var(--theme-bg);
+  background-image: linear-gradient(135deg, rgba(29, 139, 255, 0.08) 0px, rgba(29, 139, 255, 0.08) 1px, transparent 1px, transparent 18px);
+  background-repeat: repeat;
+}
+
+.bg-ecosystem {
+  background-color: var(--theme-panel-2);
+  background-image: radial-gradient(circle at 20% 20%, rgba(29, 139, 255, 0.16), transparent 22%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.12), transparent 20%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-newsletter {
+  background-color: var(--theme-white);
+  background-image: linear-gradient(180deg, rgba(29, 139, 255, 0.06), transparent 45%);
+}
+
+.hover\:-translate-y-1:hover {
+  transform: translate(var(--tw-translate-x), -0.25rem) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
