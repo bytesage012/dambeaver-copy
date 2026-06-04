@@ -1575,7 +1575,7 @@
     <div class="nav-logo">$DAMBEAVER</div>
     <ul class="nav-links">
       <li><a href="#mission">Mission</a></li>
-      <li><a href="#whitepaper">Whitepaper</a></li>
+      <li><a href="https://drive.google.com/file/d/1Vukhr8rPl_fd0rq7lgkS7Mp3fLYeDVDr/view?usp=sharing" target="_blank">Whitepaper</a></li>
       <li><a href="#tokenomics">Tokenomics</a></li>
       <li><a href="#roadmap">Roadmap</a></li>
       <li><a href="#buy" style="display:none">Buy</a></li>
@@ -1594,7 +1594,7 @@
             d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z" />
         </svg>
       </a>
-      <a href="#whitepaper" class="btn-primary">Read Whitepaper</a>
+      <a href="https://drive.google.com/file/d/1Vukhr8rPl_fd0rq7lgkS7Mp3fLYeDVDr/view?usp=sharing" target="_blank" class="btn-primary">Read Whitepaper</a>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
@@ -1613,7 +1613,7 @@
     <div class="mobile-ctas">
       <a href="https://x.com/dambeavercoin" target="_blank" class="btn-outline">Twitter / X</a>
       <a href="https://t.me/bamdeavercoin" target="_blank" class="btn-outline">Telegram</a>
-      <a href="#whitepaper" class="btn-primary">Read Whitepaper</a>
+      <a href="https://drive.google.com/file/d/1Vukhr8rPl_fd0rq7lgkS7Mp3fLYeDVDr/view?usp=sharing" target="_blank" class="btn-primary">Read Whitepaper</a>
     </div>
   </div>
 
@@ -1641,7 +1641,7 @@
         <p class="hero-slogan"><strong>A Solana-based dam building project for human relief and charity,
             $DAMBEAVER.</strong><br>Every transaction builds bridges between crypto wealth and real human need.</p>
         <div class="hero-cta-group">
-          <a href="#whitepaper" class="btn-hero-primary">📄 Read Whitepaper</a>
+          <a href="https://drive.google.com/file/d/1Vukhr8rPl_fd0rq7lgkS7Mp3fLYeDVDr/view?usp=sharing" target="_blank" class="btn-hero-primary">📄 Read Whitepaper</a>
           <a href="https://t.me/bamdeavercoin" target="_blank" class="btn-hero-outline">Join Telegram</a>
           <a href="https://x.com/dambeavercoin" target="_blank" class="btn-hero-outline">Follow on X</a>
         </div>
@@ -2121,38 +2121,7 @@
       });
     });
 
-    // Whitepaper modal
-    const wpModal = document.getElementById('wpModal');
-    const wpModalClose = document.getElementById('wpModalClose');
 
-    function openWpModal(e) {
-      e.preventDefault();
-      wpModal.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeWpModal() {
-      wpModal.classList.remove('open');
-      document.body.style.overflow = '';
-    }
-
-    // Trigger on all whitepaper links and buttons
-    document.querySelectorAll(
-      'a[href="#whitepaper"], a.btn-primary[href="#whitepaper"]'
-    ).forEach(el => el.addEventListener('click', openWpModal));
-
-    // Close on X button
-    wpModalClose.addEventListener('click', closeWpModal);
-
-    // Close on overlay click
-    wpModal.addEventListener('click', e => {
-      if (e.target === wpModal) closeWpModal();
-    });
-
-    // Close on Escape key
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape' && wpModal.classList.contains('open')) closeWpModal();
-    });
   </script>
   <script type="application/ld+json">
   {
