@@ -2062,7 +2062,7 @@
           <li><a href="#whitepaper">Whitepaper</a></li>
           <li><a href="#tokenomics">Tokenomics</a></li>
           <li><a href="#roadmap">Roadmap</a></li>
-          <li><a href="#buy">How to Buy</a></li>
+          <li><a href="#buy" style="display:none">How to Buy</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
@@ -2138,7 +2138,7 @@
 
     // Trigger on all whitepaper links and buttons
     document.querySelectorAll(
-      'a[href="#whitepaper"], a[href="https://drive.google.com/file/d/1Vukhr8rPl_fd0rq7lgkS7Mp3fLYeDVDr/view?usp=sharing"], .btn-whitepaper, a.btn-primary[href="#whitepaper"]'
+      'a[href="#whitepaper"], a.btn-primary[href="#whitepaper"]'
     ).forEach(el => el.addEventListener('click', openWpModal));
 
     // Close on X button
